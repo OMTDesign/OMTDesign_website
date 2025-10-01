@@ -7,7 +7,7 @@ body
 {
   color:              #000000;
   background-color:   #ffffff;
-  background-image:   url("/wp-content/plugins/kubio/vendor/wolfcast/browser-detection/docs/media/background.png");
+  background-image:   url("./background.png");
   background-repeat:  repeat-y;
   font-family:        tahoma, verdana, arial, sans-serif;
   font-size:          10pt;
