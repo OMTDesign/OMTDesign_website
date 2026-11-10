@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crop Health Maps &amp; Plant Counting — VARI Drone Mapping | OMT Design Hamilton NZ</title>
+<meta name="description" content="Drone crop mapping for maize and other row crops near Hamilton: VARI vegetation-index health maps, an exact plant count and plant density per field — counted with our own in-house software.">
+<meta name="theme-color" content="#f5f8fb">
+<meta property="og:title" content="Crop Health &amp; Plant Counting — Know Your Field, Plant by Plant">
+<meta property="og:description" content="VARI crop-health maps plus an exact plant count and plants-per-field density from one drone pass — counting software built in-house.">
+<meta property="og:image" content="https://omtdesign.com/assets/field-maize.jpg">
+<meta property="og:url" content="https://omtdesign.com/agriculture.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo-favicon.png">
+<link rel="apple-touch-icon" href="assets/logo-favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="OMT Design — home">
+      <img src="assets/logo-dark.png" alt="OMT Design" width="132" height="88">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="drones.html">Drones</a>
+      <a class="nav-solar" href="solar.html">Solar Inspections</a>
+      <a class="nav-agri active" href="agriculture.html">Agriculture</a>
+      <a href="printing.html">3D Printing</a>
+      <a href="design.html">Design</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-ink btn-sm" href="contact.html">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════════ CROP & AGRICULTURE ══════════════════ -->
+<section class="section section-agri" id="agriculture">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow eyebrow-green"><span class="dot dot-green"></span> Crop &amp; agriculture — VARI mapping &amp; plant counting</p>
+      <h2>Know your field, <em>plant by plant</em>.</h2>
+      <p class="section-sub">
+        One drone pass over the paddock hands you two things: a VARI health map that shows where the crop is thriving
+        or struggling, and an exact plant tally — every plant counted and density worked out per field, using counting
+        software we built in-house.
+      </p>
+    </div>
+
+    <div class="solar-hero">
+      <div class="agri-diagram agri reveal">
+        <svg viewBox="0 0 640 400" role="img" aria-label="Illustration of a drone flying a survey grid over a crop field showing VARI health zones and a counted cluster of individual plants">
+          <defs>
+            <linearGradient id="fieldFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8ab26c"/><stop offset="1" stop-color="#6b9a52"/>
+            </linearGradient>
+          </defs>
+
+          <g class="field">
+            <g transform="translate(120 110) skewX(-14)">
+              <rect width="420" height="230" rx="4" fill="url(#fieldFill)"/>
+              <g stroke="#7fa86b" stroke-width="1" opacity=".8">
+                <path d="M12 0v230M24 0v230M36 0v230M48 0v230M60 0v230M72 0v230M84 0v230M96 0v230M108 0v230M120 0v230M132 0v230M144 0v230M156 0v230M168 0v230M180 0v230M192 0v230M204 0v230M216 0v230M228 0v230M240 0v230M252 0v230M264 0v230M276 0v230M288 0v230M300 0v230M312 0v230M324 0v230M336 0v230M348 0v230M360 0v230M372 0v230M384 0v230M396 0v230M408 0v230"/>
+              </g>
+              <g stroke="#4c7a3c" stroke-width="5" opacity=".45">
+                <path d="M0 58h420M0 116h420M0 174h420"/>
+              </g>
+              <g>
+                <ellipse cx="120" cy="60" rx="55" ry="26" fill="#d9952a" opacity=".38"/>
+                <ellipse cx="300" cy="150" rx="70" ry="34" fill="#cf4520" opacity=".3"/>
+                <ellipse cx="210" cy="196" rx="40" ry="18" fill="#cf4520" opacity=".26"/>
+                <ellipse cx="380" cy="66" rx="30" ry="14" fill="#d9952a" opacity=".3"/>
+              </g>
+              <g class="count-box">
+                <rect class="reticle" x="318" y="96" width="76" height="52" rx="3"/>
+                <g class="plant-dot">
+                  <circle cx="328" cy="107" r="2"/><circle cx="344" cy="107" r="2"/><circle cx="360" cy="107" r="2"/><circle cx="376" cy="107" r="2"/>
+                  <circle cx="328" cy="122" r="2"/><circle cx="344" cy="122" r="2"/><circle cx="360" cy="122" r="2"/><circle cx="376" cy="122" r="2"/>
+                  <circle cx="328" cy="137" r="2"/><circle cx="344" cy="137" r="2"/><circle cx="360" cy="137" r="2"/><circle cx="376" cy="137" r="2"/>
+                </g>
+              </g>
+            </g>
+            <path class="field-edge" d="M120 110h420l-57.3 230H62.7z" fill="none"/>
+          </g>
+
+          <path class="flight" d="M118 150h402l-38 50H112l-24 50h398l-36 50H80" fill="none"/>
+
+          <g class="hot">
+            <g class="pin" style="--d:0s"><circle class="pulse" cx="105" cy="170" r="7"/><circle class="core" cx="105" cy="170" r="4"/></g>
+            <g class="pin" style="--d:.9s"><circle class="pulse" cx="263" cy="260" r="7"/><circle class="core" cx="263" cy="260" r="4"/></g>
+            <g class="pin" style="--d:1.8s"><circle class="pulse" cx="157" cy="305" r="7"/><circle class="core" cx="157" cy="305" r="4"/></g>
+          </g>
+
+          <g class="drone">
+            <g class="drone-body">
+              <rect x="-15" y="-5" width="30" height="10" rx="4"/>
+              <path class="arms" d="M-15 -2L-29 -11M15 -2l14 -9M-15 4l-11 7M15 4l11 7" fill="none" stroke-width="2.2" stroke-linecap="round"/>
+              <g class="rotors" fill="none" stroke-width="1.6">
+                <circle cx="-30" cy="-11" r="11"/><circle cx="30" cy="-11" r="11"/>
+                <circle cx="-27" cy="11" r="9"/><circle cx="27" cy="11" r="9"/>
+              </g>
+              <circle class="cam" cx="0" cy="0" r="4" fill="none" stroke-width="2"/>
+            </g>
+          </g>
+
+          <g class="legend">
+            <g class="li"><circle class="lg-hot" cx="80" cy="370" r="5"/><text x="92" y="374">low-VARI zone flagged</text></g>
+            <g class="li"><circle class="lg-plant" cx="282" cy="370" r="5"/><text x="294" y="374">every plant counted</text></g>
+            <g class="li"><line class="lg-flight" x1="460" y1="370" x2="482" y2="370"/><text x="492" y="374">survey flight path</text></g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="agri-copy solar-copy">
+        <div class="split-col reveal">
+          <h3><span class="tag tag-green">Deliver</span> What you get</h3>
+          <ul class="ticks tick-green">
+            <li><b>Exact plant count &amp; density</b> — our counting software detects and tallies every plant: total per field, plants per hectare, and per management zone.</li>
+            <li><b>VARI health maps</b> — a vegetation-index map banded red / amber / green so weak patches stand out at a glance.</li>
+            <li><b>Gap &amp; emergence maps</b> — skips, thin strips and hoppers located on the map, not guessed from a walk-the-paddock sample.</li>
+            <li><b>Maps you can use</b> — print-ready PDFs plus image files for your agronomist, planter setup or shed wall.</li>
+          </ul>
+        </div>
+        <div class="split-col reveal">
+          <h3><span class="tag tag-red">Spot</span> What it shows you</h3>
+          <ul class="ticks tick-red">
+            <li><b>Uneven establishment</b> — compaction, sowing depth, slugs or birds taking out strips of rows.</li>
+            <li><b>Population vs target</b> — how many plants actually made it, zone by zone, before harvest or silage.</li>
+            <li><b>Stress before it&rsquo;s obvious</b> — nutrient or water shortfalls show on the index map before they show across the paddock.</li>
+            <li><b>Storm, frost &amp; traffic damage</b> — hail, frost or pugging documented objectively across the whole field.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare-block reveal">
+      <h3>Real data from a real field</h3>
+      <p class="section-sub">
+        A maize crop field we flew — the true-colour orthomosaic and the VARI health map are the same flight processed
+        two ways. Drag the handle to flip between them.
+      </p>
+      <figure class="compare" aria-label="Before and after slider comparing the true-colour orthomosaic with the VARI health map">
+        <div class="cmp-base">
+          <img src="assets/field-maize.jpg" width="1400" height="1127" loading="lazy"
+               alt="True-colour drone orthomosaic of a maize field — individual plants visible along every row">
+        </div>
+        <div class="cmp-top">
+          <img src="assets/field-maize-vari.jpg" width="1400" height="1127" loading="lazy"
+                alt="The same maize field as a VARI vegetation-index map — green healthy zones with amber and red stressed areas">
+        </div>
+        <span class="cmp-handle" aria-hidden="true">⇄</span>
+        <input class="cmp-range" type="range" min="0" max="100" value="50"
+               aria-label="Drag to compare the true-colour map with the VARI health map">
+        <figcaption class="cmp-cap">
+          <span>VARI health map</span>
+          <span>True-colour orthomosaic</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <ol class="steps reveal">
+      <li><span class="step-n">01 · Fly</span><h4>A grid pass in true colour</h4><p>Overlapping photos flown in a lawn-mower grid until every square metre of the field is covered.</p></li>
+      <li><span class="step-n">02 · Build</span><h4>One seamless map</h4><p>Photos stitched into a single orthomosaic — the whole field in one image, sharp enough to pick out individual plants.</p></li>
+      <li><span class="step-n">03 · Index</span><h4>VARI health bands</h4><p>The vegetation index turns the map red / amber / green by crop vigour, so problem zones are obvious in seconds.</p></li>
+      <li><span class="step-n">04 · Count</span><h4>Every plant tallied</h4><p>Our in-house software detects and counts each plant — totals, density and gaps delivered in a report, not a sample.</p></li>
+    </ol>
+
+    <div class="who">
+      <div class="who-grid reveal">
+      <div class="who-card"><h4>Arable &amp; broad-acre growers</h4><p>Population and crop vigour before harvest or silage — count what you&rsquo;re actually bringing off the field.</p></div>
+      <div class="who-card"><h4>Agronomists &amp; crop consultants</h4><p>Zone-by-zone evidence for sampling plans and client reports, with maps to mark up and revisit.</p></div>
+      <div class="who-card"><h4>Orchard &amp; vineyard managers</h4><p>Missing vine or tree inventories and replant lists, counted from the air instead of on foot.</p></div>
+      <div class="who-card"><h4>Farm managers &amp; insurers</h4><p>Hail, frost or animal damage documented field-wide — objective before-and-after evidence.</p></div>
+      </div>
+    </div>
+
+    <div class="who">
+      <div class="who-grid who-grid-2 reveal">
+      <div class="who-card">
+        <h4>Same trip as your solar inspection?</h4>
+        <p>If the shed or house array is due for a thermal survey, we can pair it with the field flight — one visit, two reports.</p>
+        <a class="card-link" href="solar.html">See solar inspections <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="who-card">
+        <h4>Want more from the flight?</h4>
+        <p>The same pass can feed orthomosaics, boundary maps and 3D site models for the rest of the farm.</p>
+        <a class="card-link" href="drones.html">Drone services <span aria-hidden="true">→</span></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="cta-band cta-band-agri reveal">
+      <div>
+        <h3>Book a crop-health &amp; plant-count flight</h3>
+        <p>Based in Hamilton; travel quoted for Waikato, Bay of Plenty and the wider North Island.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-green" href="contact.html">Arrange a field flight</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <img src="assets/logo-dark.png" alt="OMT Design" width="118" height="79">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="drones.html">Drones</a><a href="solar.html">Solar inspections</a><a href="agriculture.html">Agriculture</a><a href="printing.html">3D printing</a>
+      <a href="design.html">Design</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <p class="fine">
+      © <span id="year">2026</span> OMTDesign · Hamilton, New Zealand ·
+      <a href="mailto:info@omtdesign.com">info@omtdesign.com</a>
+    </p>
+  </div>
+</footer>
+
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

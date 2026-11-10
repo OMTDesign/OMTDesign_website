@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Panel (PV) Drone Inspections — Thermal &amp; Visual | OMT Design Hamilton NZ</title>
+<meta name="description" content="Drone solar panel inspections near Hamilton: thermal and visual surveys that flag hot spots, string faults, soiling, shading and damage panel by panel, with a prioritised report you can act on.">
+<meta name="theme-color" content="#f5f8fb">
+<meta property="og:title" content="Solar PV Inspections — Find the fault before it finds your power bill">
+<meta property="og:description" content="Thermal and visual drone surveys of PV arrays across Waikato and the Bay of Plenty — every panel indexed, every fault located, a report you can act on.">
+<meta property="og:image" content="https://omtdesign.com/assets/hero-drone.jpg">
+<meta property="og:url" content="https://omtdesign.com/solar.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo-favicon.png">
+<link rel="apple-touch-icon" href="assets/logo-favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="OMT Design — home">
+      <img src="assets/logo-dark.png" alt="OMT Design" width="132" height="88">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="drones.html">Drones</a>
+      <a class="nav-solar active" href="solar.html">Solar Inspections</a>
+      <a class="nav-agri" href="agriculture.html">Agriculture</a>
+      <a href="printing.html">3D Printing</a>
+      <a href="design.html">Design</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-ink btn-sm" href="contact.html">Get a quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════════ SOLAR PV ══════════════════ -->
+<section class="section section-solar" id="solar">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow eyebrow-amber"><span class="dot dot-amber"></span> Flagship service — solar PV</p>
+      <h2>Find the fault <em>before</em> it finds your power bill.</h2>
+      <p class="section-sub">
+        One dirty, shaded or failing panel can drag a whole string down. A drone flies the array in about an hour and
+        hands you a report that points at the exact module — no cherry picker, no climbing on the roof, no shutdown.
+      </p>
+    </div>
+
+    <div class="solar-hero">
+      <div class="solar-diagram reveal">
+        <svg viewBox="0 0 640 400" role="img" aria-label="Illustration of a drone flying a survey grid over a solar panel array with flagged hot spots">
+          <defs>
+            <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#204063"/><stop offset="1" stop-color="#17293c"/>
+            </linearGradient>
+          </defs>
+
+          <g class="array">
+            <g transform="translate(150 150) skewX(-40)">
+              <rect width="380" height="150" rx="4" fill="url(#panelFill)"/>
+              <g stroke="#43648a" stroke-width="1.3">
+                <path d="M0 30h380M0 60h380M0 90h380M0 120h380"/>
+                <path d="M47.5 0v150M95 0v150M142.5 0v150M190 0v150M237.5 0v150M285 0v150M332.5 0v150"/>
+              </g>
+              <g class="bad-cells" fill="#3a2f2c">
+                <rect x="95" y="60" width="47.5" height="30"/>
+                <rect x="285" y="30" width="47.5" height="30"/>
+                <rect x="190" y="120" width="47.5" height="30"/>
+              </g>
+            </g>
+            <path class="array-edge" d="M150 150h380l-125.9 150H24.1z" fill="none"/>
+          </g>
+
+          <path class="flight" d="M153 170h340l-33 40H120l-34 40h340" fill="none"/>
+
+          <g class="hot">
+            <g class="pin" style="--d:0s"><circle class="pulse" cx="206" cy="225" r="7"/><circle class="core" cx="206" cy="225" r="4"/></g>
+            <g class="pin" style="--d:.9s"><circle class="pulse" cx="421" cy="195" r="7"/><circle class="core" cx="421" cy="195" r="4"/></g>
+            <g class="pin" style="--d:1.8s"><circle class="pulse" cx="250" cy="285" r="7"/><circle class="core" cx="250" cy="285" r="4"/></g>
+          </g>
+
+          <g class="drone">
+            <g class="drone-body">
+              <rect x="-15" y="-5" width="30" height="10" rx="4"/>
+              <path class="arms" d="M-15 -2L-29 -11M15 -2l14 -9M-15 4l-11 7M15 4l11 7" fill="none" stroke-width="2.2" stroke-linecap="round"/>
+              <g class="rotors" fill="none" stroke-width="1.6">
+                <circle cx="-30" cy="-11" r="11"/><circle cx="30" cy="-11" r="11"/>
+                <circle cx="-27" cy="11" r="9"/><circle cx="27" cy="11" r="9"/>
+              </g>
+              <circle class="cam" cx="0" cy="0" r="4" fill="none" stroke-width="2"/>
+            </g>
+          </g>
+
+          <g class="legend">
+            <g class="li"><circle class="lg-hot" cx="120" cy="344" r="5"/><text x="132" y="348">flagged fault</text></g>
+            <g class="li"><rect class="lg-panel" x="292" y="338" width="16" height="12" rx="2"/><text x="316" y="348">every panel indexed</text></g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="solar-copy">
+        <div class="split-col reveal">
+          <h3><span class="tag tag-amber">Check</span> What we look for</h3>
+          <ul class="ticks tick-amber">
+            <li><b>Hot spots &amp; electrical faults</b> — dead or failing cells, bypass-diode failures, junction-box and string faults showing on thermal.</li>
+            <li><b>Cell cracks &amp; delamination</b> — micro-cracking, busbar separation, moisture ingress and discolouration.</li>
+            <li><b>Soiling &amp; shading</b> — dirt, pollen, bird droppings and lichen, plus vegetation or structures you can cut back.</li>
+            <li><b>Mounting &amp; balance-of-system</b> — loose clamps, corrosion, missing modules, cable management, inverter-area condition.</li>
+          </ul>
+        </div>
+        <div class="split-col reveal">
+          <h3><span class="tag tag-blue">Deliver</span> What you get</h3>
+          <ul class="ticks tick-blue">
+            <li><b>Visual + thermal report</b> — every finding photographed and marked with its position on the array.</li>
+            <li><b>Panel-level index</b> — modules numbered on an array map, so a repair is never a guessing game.</li>
+            <li><b>Prioritised actions</b> — safety issues, output losses and nice-to-haves separated, with likely impact.</li>
+            <li><b>A baseline for repeat surveys</b> — year-on-year comparison so degradation and repairs are measurable.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <ol class="steps reveal">
+      <li><span class="step-n">01</span><h4>Tell me about the array</h4><p>Size, tilt, access and what you're seeing — underperformance, a fault code, or just a check-up.</p></li>
+      <li><span class="step-n">02</span><h4>Plan &amp; fly</h4><p>Airspace and site check, then a planned pass at nadir and oblique with visual and thermal payloads.</p></li>
+      <li><span class="step-n">03</span><h4>Process &amp; analyse</h4><p>Images registered, arrays numbered module by module, anomalies measured against neighbouring panels.</p></li>
+      <li><span class="step-n">04</span><h4>Report &amp; walk-through</h4><p>PDF (raw imagery too if you want it) plus a call to talk through what to fix first.</p></li>
+    </ol>
+
+    <div class="media-pair">
+      <figure class="shot reveal shot-compare">
+        <div class="shot-img">
+          <div class="compare">
+            <div class="cmp-base">
+              <img src="assets/solar-array-visual-v2.jpg?v=2" width="900" height="755" loading="lazy"
+                   alt="True-colour drone orthomosaic of a large commercial rooftop solar array, panel rows running across the roof">
+            </div>
+            <div class="cmp-top">
+              <img src="assets/solar-array-thermal-v2.jpg?v=2" width="900" height="755" loading="lazy"
+                   alt="The same array in thermal imaging &mdash; warm panels and hot spots light up against the cooler roof">
+            </div>
+            <span class="cmp-handle" aria-hidden="true">&#8644;</span>
+            <input class="cmp-range" type="range" min="0" max="100" value="50"
+                   aria-label="Drag to compare the true-colour view with the thermal view of the array">
+            <div class="cmp-cap"><span>Thermal</span><span>True colour</span></div>
+          </div>
+        </div>
+        <figcaption>
+          <h4>Visual &amp; thermal on one array</h4>
+          <p>Drag across &mdash; the same roof mapped in true colour and re-flown in heat. Hot strings, dirty runs and underperforming panels stand out as bright patches on the thermal side.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="shot reveal shot-mesh">
+        <div class="shot-img">
+          <img src="assets/pointcloud-roof-array3.jpg" width="1180" height="907" loading="lazy"
+               alt="3D point-cloud mesh of a commercial site including a large solar array on the roof">
+        </div>
+        <figcaption>
+          <h4>A digital twin of the whole site</h4>
+          <p>The same flight also gives you a 3D model — roof, yard, raceways and the PV array in one file you can measure and share.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="who reveal">
+      <h3>Who I do this for</h3>
+      <div class="who-grid">
+        <div class="who-card"><h4>Solar installers &amp; electricians</h4><p>A thermal pass over a newly installed array confirms strings, cells and connections are clean before handover &mdash; faults caught while warranty still means something.</p></div>
+        <div class="who-card"><h4>Solar O&amp;M contractors</h4><p>Commissioning and maintenance evidence, or a subcontracted flight when your crew is already flat out.</p></div>
+        <div class="who-card"><h4>Commercial site managers</h4><p>Rooftop PV plus roof condition in one visit, with a record for insurers and capital planning.</p></div>
+        <div class="who-card"><h4>Homeowners, farms &amp; orchards</h4><p>Pre-purchase checks, warranty claims, and &ldquo;my generation dropped&rdquo; — often one dirty or one bad panel. Farm sheds, barns and orchard arrays too.</p></div>
+      </div>
+    </div>
+
+    <div class="cta-band reveal">
+      <div>
+        <h3>Book a solar array inspection</h3>
+        <p>Based in Hamilton; travel quoted for Tauranga, Bay of Plenty and the wider North Island.</p>
+      </div>
+      <a class="btn btn-amber" href="contact.html">Arrange a survey date</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <img src="assets/logo-dark.png" alt="OMT Design" width="118" height="79">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="drones.html">Drones</a><a href="solar.html">Solar inspections</a><a href="agriculture.html">Agriculture</a><a href="printing.html">3D printing</a>
+      <a href="design.html">Design</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <p class="fine">
+      © <span id="year">2026</span> OMTDesign · Hamilton, New Zealand ·
+      <a href="mailto:info@omtdesign.com">info@omtdesign.com</a>
+    </p>
+  </div>
+</footer>
+
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
