@@ -143,7 +143,7 @@
   /* contact form: validates, then hands off to the visitor's mail client.
      REPLACE the address in ENQUIRY_EMAIL with your real inbox, and wire a
      real backend (WPForms / Contact Form 7 / Formspree) when migrating. */
-  var ENQUIRY_EMAIL = "info@omtdesign.com";
+  var ENQUIRY_EMAIL = "info@omtdesign.co.nz";
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
   if (form) {
