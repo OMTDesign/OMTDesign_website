@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omtdesign.com/sitemap.xml
+Sitemap: https://omtdesign.co.nz/sitemap.xml
